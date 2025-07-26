@@ -14,7 +14,7 @@ Add this to the import map in deno.json:
 ```json
 {
   "imports": {
-    "ts-result": "https://raw.githubusercontent.com/MoonlightOffice/ts-util/@latest/result.ts"
+    "ts-util": "https://raw.githubusercontent.com/MoonlightOffice/ts-util/@latest/mod.ts"
   }
 }
 ```
