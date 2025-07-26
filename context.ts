@@ -21,6 +21,10 @@ export class Context {
     return this.#data.get(key)
   }
 
+  has(key: string): boolean {
+    return this.#data.has(key)
+  }
+
   delete(key: string) {
     this.#data.delete(key)
   }

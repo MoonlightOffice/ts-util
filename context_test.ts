@@ -10,12 +10,15 @@ Deno.test("Context", () => {
   assertEquals(ctx.get("k1"), "v1")
   assertEquals(ctx.get("k2"), 123)
   assertEquals(ctx.get("k3"), null)
+  assertEquals(ctx.has("k3"), false)
 
   ctx.set("k3", "v3")
   assertEquals(ctx.get("k3"), "v3")
+  assertEquals(ctx.has("k3"), true)
 
   ctx.delete("k3")
   assertEquals(ctx.get("k3"), null)
+  assertEquals(ctx.has("k3"), false)
 })
 
 Deno.test("Context passed to functions", () => {
