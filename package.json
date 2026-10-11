@@ -1,0 +1,13 @@
+{
+  "name": "ts-util",
+  "type": "module",
+  "module": "index.ts",
+  "devDependencies": {
+    "@types/bun": "latest",
+    "oxfmt": "^0.72.0",
+    "oxlint": "^1.87.0"
+  },
+  "peerDependencies": {
+    "typescript": "^7"
+  }
+}

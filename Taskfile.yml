@@ -1,0 +1,27 @@
+version: "3"
+
+silent: true
+
+tasks:
+  default:
+    desc: List all available tasks
+    cmd: task -l
+
+  tidy:
+    desc: Run check, fmt, lint
+    cmds:
+      - bun check
+      - task: fmt
+      - task: "lint:fix"
+
+  lint:
+    desc: Run lint checks
+    cmd: bun run oxlint
+
+  lint:fix:
+    desc: Run lint fixes
+    cmd: bun run oxlint --fix
+
+  fmt:
+    desc: Format code
+    cmd: bun oxfmt
