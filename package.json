@@ -1,7 +1,11 @@
 {
   "name": "ts-util",
   "type": "module",
-  "exports": "index.ts",
+  "exports": {
+    ".": {
+      "default": "./index.ts"
+    }
+  },
   "devDependencies": {
     "@types/bun": "latest",
     "oxfmt": "^0.72.0",
