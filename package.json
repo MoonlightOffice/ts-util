@@ -3,7 +3,9 @@
   "type": "module",
   "exports": {
     ".": {
-      "default": "./index.ts"
+      "types": "./src/index.ts",
+      "bun": "./src/index.ts",
+      "default": "./src/index.ts"
     }
   },
   "devDependencies": {
